@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+}
+
+div.platform{
+    background: url("../img/bg3.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+    /* filter: blur(10px); */
+}
+
+.activityHolder{
+    width: 75%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.367);
+    margin: auto;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: ridge 5px rgb(186, 184, 184);
+    /* border-top: none; */
+    /* border-bottom: none; */
+    height: 70%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 618px;
+    min-width: 330px;
+
+}
+
+.activityHolder a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 1.3em;
+    padding: 9px;
+    border-radius: 2px;
+    border: transparent 2px ridge;
+    background-color: rgb(235, 233, 233);
+}
+
+.activityHolder a:hover{
+    color: white;
+    background-color: #a779a8;
+    /* border: #aa1ead 2px solid; */
+    box-shadow: 1px 0 0px #cebbcf, 0px -1px 0px #cebbcf, 0 1px 0px #cebbcf, -1px 0 0px #cebbcf;
+
+}
+
+.activityHolder a:focus{
+    color: rgb(74, 72, 201);
+}
+
+body, :root{
+    @media (max-width:500px) {
+        font-size: 14px;
+    }
+}

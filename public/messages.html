@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>View Messsages</title>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/messages.js" defer></script>
+</head>
+<body>
+    
+
+    <div class="contentHolder vh-100 position-relative">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container d-block ">
+    <form action="" class="d-flex justify-content-between navForm">
+      <a class="navbar-brand fw-bold text-white mx-0 me-md-4 " href="#">Upscale</a>
+      <div class="d-md-flex d-none searchHolder rounded-pill py-1"  style="max-width: 520px; width: 70%;"> 
+          <button class="btn border-0 rounded-circle" type="submit"><i class="fa fa-search "></i></button>      
+          <input class="me-2 border-0 bg-transparent"  type="search" placeholder="Search Messages" aria-label="Search">
+      </div>
+
+      <div class="ms-3">
+        <select title="Select Message Status" class="d-md-inline d-none form-select py-2">
+          <option>All</option>
+          <option>Read</option>
+          <option>Unread</option>
+        </select>
+      </div>
+    </form>
+
+  
+  
+
+
+  </div>
+</nav>
+
+<div class="tools d-flex align-items-center allDetails justify-content-between">
+
+  <div class="first1 d-flex align-items-center allDetails">
+     <span class="me-2 selectAll d-flex ps-lg-2" style="margin-bottom:5px">
+      <input type="checkbox" name="" id="" class="form-check-input customCheckBox firstCheckbox text-center">
+     </span>
+
+    <button class="btn"><i class="fa-solid fa-rotate-right"></i></button>
+    <button class="btn d-md-none hide-tools"><i class="fa-solid fa-magnifying-glass"></i></button>            
+    <button disabled class=" btn hide-tools delBtn"><i class="fa-solid fa-trash"></i></button>
+
+     <div class="dropdown more-tools">
+          <button class="btn" data-bs-toggle="dropdown" type="button"><i class="fa-solid fa-ellipsis-vertical" ></i>
+          </button>
+
+          <div class="dropdown-menu dropdown-menu-custom ">
+            <button class="dropdown-item btn d-md-none"><i class="fa-solid fa-magnifying-glass"></i><span class="ms-2">Search</span></button>
+            <button disabled class="dropdown-item btn delBtn"><i class="fa-solid fa-trash"></i><span class="ms-2 ">Delete</span></button>
+          </div>
+     </div>
+
+
+  </div>
+
+
+      <div class="">
+        <select title="Select Message Status " class="d-md-none d-inline form-select  smallSelectStatus">
+          <option>All</option>
+          <option>Read</option>
+          <option>Unread</option>
+        </select>
+      </div>
+  <div class="second d-flex align-items-center allDetails">
+    <span class="text textPosition">1-30 of 200</span>
+    <button class="btn left-arrow colorAsh">&lt </button>
+    <button class="btn right-arrow ">&gt</button>
+  </div>
+
+
+</div>
+
+
+<div class="messagesSmall messageHolderGeneral d-md-none">
+
+   <!-- <div class=" d-flex justify-content-between messageSmall align-items-center">
+    <div class="d-flex align-items-center allDetails">
+      <input class="mx-2 form-check-input customCheckBox " title="select mail" type="checkbox">
+      <div class="d-flex flex-column details1 ">
+        <span class="sender fs-5 fw-bold">John Doe</span>
+        <span class="preview " style="font-size:0.9em">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </span>
+    </div>
+    </div>
+    <div class="time mx-1" style="font-size:0.9em">
+      7:40am
+    </div>
+  </div>
+    <div class="time mx-1" style="font-size:0.9em">
+      7:40am
+    </div>
+  </div>
+  -->
+ 
+
+  <div class="noBookings d-none border-0 ">
+    You have no Bookings
+  </div>
+</div>
+
+
+<div class="tableContainer messageHolderGeneral d-none d-md-block">
+
+  <table class=" messagesTable table w-100 mb-0">
+  <tbody>
+<!-- 
+    <tr class="messagesLarge messages">
+      <td class="marker text-center ps-0"><input class="form-check-input customCheckBox" type="checkbox" name="" id=""></td>
+      <td class="sender">John doe</td>
+      <td class="preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore exercitationem quis natus explicabo totam a rem sapiente deleniti assumenda tempora?</td>
+      <td class="time">1:12PM</td>
+    </tr>
+ -->
+   </tbody>
+</table>
+
+  <div class="noBookings d-none border-0 ">
+    You have no Bookings
+  </div>
+</div>
+
+
+<!-- UI helpers -->
+<div class="position-fixed d-none delete-ask justify-content-center text-center p-3 pb-3 rounded-2">
+  <div class="question">Delete this message? </div> 
+  <div class="text-center">
+   <button class="btn btn-danger delBtn" >Yes</button> <button class="btn btn-secondary cancel-delBtn" >Cancel</button>
+  </div>
+
+</div>
+<div class="position-fixed d-none delete-ask justify-content-center text-center p-3 pb-3 rounded-2">
+  <div class="question">Delete these messages? </div> 
+  <div class="text-center">
+   <button class="btn btn-danger delBtn" >Yes</button> <button class="btn btn-secondary cancel-delBtn" >Cancel</button>
+  </div>
+
+</div>
+
+<div class="delete-confirmation rounded-1 d-none">
+  <span class="icon"><i class="icon fa-solid far fa-check-circle text-success"></i></span>
+      <br>
+  Message Deleted </div>
+
+  <div class="loader d-none w-100 vh-100 position-fixed d-flex">
+    <img class="" src="./img/Spinner-1s-200px (1).svg">
+  </div>
+
+</body>
+</html>

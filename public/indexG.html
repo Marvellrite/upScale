@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="imagess/upscale.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>UPSCALE CARE</title>
+</head>
+
+<body class="bg-upscaleGrey">
+    <section class="NavSection">
+        <nav class=" bg-upscaleBlue mx-auto items-center flex justify-around fixed w-[100%]">
+            <div>
+                <img src="imagess/upscaleLogo.png" alt="" class="w-[100px]">
+            </div>
+
+            <div class="flex items-center gap-5">
+                <li class="hidden md:flex space-x-6 list-none">
+                    <a href=""
+                        class="p-[8px] hover:bg-upscalePink rounded-md transition duration-500 ease-in-out">Home</a>
+                    <a href="" class="p-[8px] hover:bg-upscalePink rounded-md transition duration-500 ease-in-out">Care
+                        Service</a>
+                    <a href="" class="p-[8px] hover:bg-upscalePink rounded-md transition duration-500 ease-in-out">About
+                        Us</a>
+                </li>
+                <button href=""
+                    class="bg-upscalePink p-[8px] rounded-md hover:bg-upscaleGrey transition duration-500 ease-in-out bookNowbtn">Book
+                    Now</button>
+
+                <button class="flex md:hidden faButtons">
+                    <span>
+                        <i class="fa-solid fa-bars cursor-pointer"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-times text-red-600 font-bold cursor-pointer"></i>
+                    </span>
+                </button>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Drop Down -->
+
+    <section class="bg-upscaleBlue top-[100px] right-0 w-[100%]  list-items fixed md:static">
+        <div class="">
+            <li class="grid md:hidden list-none">
+                <a href=""
+                    class="p-[8px]">Home</a>
+                <a href="" class="p-[8px]">Care
+                    Service</a>
+                <a href="" class="p-[8px]">About
+                    Us</a>
+            </li>
+        </div>
+    </section>
+
+    <section id="heroSection">
+        <!-- Exemplary Care, Tailored to You.
+Precision in Health, Compassion in Service. -->
+        <div class="ml-[20px] md:ml-[50px] mt-[200px] md:mt-[200px] lg:mt[300px]">
+            <h1 class="text-3xl md:text-[50px] font-bold text-purple-900 md:text-upscaleBlue">Feel safe and cared
+            </h1>
+            <h1 class="text-2xl md:text-[35px] font-bold text-purple-900 md:text-upscaleBlue shadow-gray-900 md:leading-[50px]">for in your own home</h1>
+            <h1 class="font-bold text-upscalePink">A guide to FeelCare support services</h1> 
+            <button href=""
+                    class="bg-upscalePink p-[8px] rounded-md hover:bg-purple-900 hover:text-upscaleGrey md:hover:bg-upscaleBlue transition duration-500 ease-in-out mt-[10px] md:mt-[20px] outline-none border-none bookNowbtn">Book
+                    Now</button>
+        </div>
+    </section>
+
+    <!-- CARE SERVICE  -->
+    <section>
+        <div>
+            <header class="text-center mt-[10px] font-bold">Care Service</header>
+        </div>
+
+        <div class="block md:flex">
+            <div class="mt-[15px] w-[300px] md:w-[400px] mx-auto">
+                <img src="imagess/careService.jpg" alt="" class="w-[100%] h-[200px] md:h-[250px]">
+            </div>
+
+            <div class="block md:flex">
+                <p class="justify-center mx-[20px] mt-[10px] font-mono text-center w-[450px] md:w-[400px]">Our services are designed to reflect your individual preferences, support needs and abilities, no care package is ever the same. Our experienced carers can visit you in your own home to support you with many different life and personal tasks:</p>
+
+                <div class="font-monos border-upscaleBlue border-2 truncate w-[400px] md:w-[400px] mx-auto mt-[10px] rounded-lg text-center font-serif mb-[10px]">
+                    <p class="careService1">
+                        	personal care
+                        <br>
+                        	household chores
+                        <br>
+                        	administration of prescribed medication
+                        <br>
+                        	companionship and socializing
+                        <br>
+                        	shopping, meal preparation
+                        <br>
+                        	support with eating and drinking
+                        <br>
+                        	attending appointments
+                        <br>
+                        	attending social activities
+                        <br>
+                        	assisting with continence
+                    </p>
+                    <p class="hidden careService2">
+                        cancer care
+                        <br>
+                        post-operative
+                        <br>
+                        dementia
+                        <br>
+                        end-of-life support
+                        <br>
+                        age related frailty
+                        <br>
+                        acquired brain injuries (ABI) 
+                        <br>
+                        physical and mental health needs  
+                        <br>
+                        learning disabilities and autism
+                    </p>
+                    <button class="bg-upscaleBlue truncate p-[8px] rounded-lg moreButton">More!!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section>
+        <!-- ABOUT US -->
+        <header class="text-center font-bold">About Us</header>
+        <div class="block md:flex mt-[15px]">
+            <div class=" mx-auto w-[300px] md:w-[40%]">
+                <img src="imagess/About Us.jpg" alt="" class="w-[100%] h-[200px] md:h-[250px]">
+            </div>
+    
+            <div class="md:w-[60%] mx-[30px]">
+                <p class="w-[100%]">
+                    As it’s not always possible for our own families to take care of us when we are frail or unwell, we want to let you know we are here to help if the need should arise. FeelCare Home Care Services is a family run support provider in London. We priovide hourly care from 4 hours locally and 24 hour live-in care nationwide. 
+                </p>
+                <p>
+                    Our shared ethos is to retain the highest quality of support no matter the level of needs or circumstances. From home cooking and cleaning, getting out with friends, to personal care and assistance, our team help people with a variety of needs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="mt-[20px]">
+        <h1 class="font-bold text-center">Testimonial</h1>
+
+        <div class="mx-[30px] block md:flex">
+            <div class="bg-upscalePink rounded-lg p-[10px] font-serif ">
+                <p>
+                    “The level of care and attention provided to 
+                    my husband, Stanley has been nothing short of 
+                    outstanding. The FeelCare carers are experienced 
+                    and have quickly understood Stanley’s quite 
+                    complex needs and advanced Alzheimer’s.
+                    Our live-in carer has been kind, responsive
+                    responsible and kept him laughing! She is a 
+                    pleasure to have around which is important 
+                    when someone is living in your home. I was 
+                    introduced to Christine the company’s founder at
+                    a desperately difficult time and I don’t know what 
+                    I would have done without her and her team”
+
+                </p>
+                <h1 class="font-mono text-center font-bold mt-[5px]">Mrs. Vera Coleman </h1>
+            </div>
+
+            <div class="bg-upscalePink rounded-lg p-[10px] font-serif my-[5px] md:mx-[5px]">
+                <p>
+                    “The level of care and attention provided to 
+                    my husband, Stanley has been nothing short of 
+                    outstanding. The FeelCare carers are experienced 
+                    and have quickly understood Stanley’s quite 
+                    complex needs and advanced Alzheimer’s.
+                    Our live-in carer has been kind, responsive
+                    responsible and kept him laughing! She is a 
+                    pleasure to have around which is important 
+                    when someone is living in your home. I was 
+                    introduced to Christine the company’s founder at
+                    a desperately difficult time and I don’t know what 
+                    I would have done without her and her team”
+
+                </p>
+                <h1 class="font-mono text-center font-bold mt-[5px]">Mrs. Vera Coleman </h1>
+            </div>
+
+            <div class="bg-upscalePink rounded-lg p-[10px] font-serif">
+                <p>
+                    “The level of care and attention provided to 
+                    my husband, Stanley has been nothing short of 
+                    outstanding. The FeelCare carers are experienced 
+                    and have quickly understood Stanley’s quite 
+                    complex needs and advanced Alzheimer’s.
+                    Our live-in carer has been kind, responsive
+                    responsible and kept him laughing! She is a 
+                    pleasure to have around which is important 
+                    when someone is living in your home. I was 
+                    introduced to Christine the company’s founder at
+                    a desperately difficult time and I don’t know what 
+                    I would have done without her and her team”
+
+                </p>
+                <h1 class="font-mono text-center font-bold mt-[5px]">Mrs. Vera Coleman </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently asked questions  -->
+    <section class="mt-[10px] mb-[30px]">
+        <header class="uppercase font-bold text-center">Frequently asked questions</header>
+        <div class="block md:flex">
+            <div class="question mt-[5px] mx-[10px] md:w-[33%]">
+                <div class="flex bg-upscaleBlue rounded-md justify-between px-[5px] items-center">
+                    <h2 class="text-center font-serif">How your support is arranged</h2>
+                    <button class="buttons absolute md:relative right-[15px]">
+                        <span class="plus-icon">
+                            <i class="fa fa-plus-square border-none outline-none"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="fa fa-minus-square border-none outline-none"></i>
+                        </span>
+                    </button>
+                   
+                </div>
+                <div class="faq-text">
+                    <p class="bg-upscaleBlue rounded-md mt-[5px] text-[14px] font-serif p-[5px]">Arranging support is quick and simple, once an initial care assessment has been carried out by a FeelCare manager a care plan is produced which includes: your care needs, timings of your carer visits, interests, contacts, medication and so on. When completed and agreed by you, a suitable care team member can then be matched with your file and introduced at a convenient time. </p>
+                </div>
+            </div>
+
+            <div class="question mt-[5px] mx-[10px] md:w-[33%]">
+                <div class="flex bg-upscaleBlue rounded-md justify-between px-[5px] items-center">
+                    <h2 class="text-center font-serif">How to change or cancel your care arrangements</h2>
+                    <button class="buttons absolute md:relative right-[15px]">
+                        <span class="plus-icon">
+                            <i class="fa fa-plus-square border-none outline-none"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="fa fa-minus-square border-none outline-none"></i>
+                        </span>
+                    </button>
+                   
+                </div>
+                <div class="faq-text">
+                    <p class="bg-upscaleBlue rounded-md mt-[5px] text-[14px] font-serif p-[5px]">If at any point in time you are unhappy with the care you are receiving you can call the office team to express your concerns, make changes or cancel your care. It is your home, your care and always your choice. </p>
+                </div>
+            </div>
+
+            <div class="question mt-[5px] mx-[10px] md:w-[33%]">
+                <div class="flex bg-upscaleBlue rounded-md justify-between px-[5px] items-center">
+                    <h2 class="text-center font-serif">What your FeelCare carer can help you with</h2>
+                    <button class="buttons absolute right-[15px]">
+                        <span class="plus-icon">
+                            <i class="fa fa-plus-square border-none outline-none"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="fa fa-minus-square border-none outline-none"></i>
+                        </span>
+                    </button>
+                   
+                </div>
+                <div class="faq-text">
+                    <p class="bg-upscaleBlue rounded-md mt-[5px] text-[14px] font-serif p-[5px]">There are so many tasks and needs a carer can attend to. The best thing is to call our team for an informal chat about what type of support it is you need - from household chores and cooking to personal care and medication support there's lots we can help you with.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="upscaleCare.js"></script>
+</body>
+
+</html>
+<!-- [1/8, 7:52 PM] Whyt Electrical THE GREATEST: Instagram, Facebook page, LinkedIn 
+@upscalecareuk
+[1/8, 7:55 PM] Whyt Electrical THE GREATEST: admin@upscalecare.co.uk -->
+
+<!-- https://www.moralcare.co.uk/
+https://www.support-unlimited.com/
+https://caresante.co.uk/care-sante-london/
+https://miacareservices.co.uk/
+https://www.feelcare.co.uk/ -->

@@ -1,0 +1,312 @@
+body {
+  background: url("../img/bg3.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.btn{
+  border:none !important;
+}
+
+.btn:active {
+  background-color: rgb(181, 180, 180) !important;
+}
+
+.btn:disabled{
+  color: #afafaf !important;
+}
+
+  .textPosition{
+    font-size: 1em;
+  }
+
+nav.navbar {
+  background-color: rgb(39, 38, 39);
+  color: white;
+}
+nav.navbar:nth-child(1) > a {
+  color: orange;
+}
+
+form *::placeholder {
+  font-size: 1.1em;
+}
+form div.searchHolder {
+  width: 100%;
+  background-color: white;
+}
+form div.searchHolder input {
+  border: none !important;
+  outline: none !important;
+  width: 100%;
+}
+form div.searchHolder input:focus {
+  border: transparent !important;
+  outline: none !important;
+}
+form div.searchHolder.focused {
+  background-color: white;
+}
+form select > option {
+  font-size: 1.1em;
+}
+form select:focus {
+  box-shadow: 0 0 0 0.25rem #b329e5b1 !important;
+}
+
+.boxEmphasis {
+  box-shadow: 0 0 0 0.25rem #b329e5b1 !important;
+}
+
+div.contentHolder {
+  border: ridge 2px rgb(186, 184, 184);
+  border-bottom: none;
+  border-top: none;
+  width: 90vw;
+  margin-inline: auto;
+  background-color: rgba(255, 255, 255, 0.739);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+div.contentHolder table.messagesTable {
+  table-layout: fixed;
+}
+div.contentHolder table.messagesTable tr.messages {
+  color: black;
+  font-size: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.contentHolder table.messagesTable td{
+  background-color: transparent;
+}
+/* div.contentHolder table.messagesTable tr.messages:nth-of-type(odd) > td {
+  background-color: #f6f5f7;
+} */
+div.contentHolder table.messagesTable tr.messages td.marker {
+  width: 40px;
+}
+div.contentHolder table.messagesTable tr.messages td.sender {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 125px;
+}
+div.contentHolder table.messagesTable tr.messages td.preview {
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+div.contentHolder table.messagesTable td.time {
+  width: 70px;
+  font-size: 0.9em;
+}
+
+div.tableContainer {
+  height: 82vh;
+  overflow-y: auto;
+}
+
+input.customCheckBox {
+  height: 1.1rem;
+  width: 1.1rem;
+}
+input.customCheckBox:checked {
+  background-color: #ca69ed !important;
+  border-color: #d994f2 !important;
+}
+input.customCheckBox:focus {
+  box-shadow: 0 0 0 0.15rem #b329e5b1;
+}
+
+td.marker {
+  width: 40px;
+}
+
+div.tools {
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.909);
+}
+div.tools .first1 {
+  padding-inline: 8px;
+}
+div.tools .second {
+  padding-inline: 0.7rem;
+}
+
+
+.colorAsh {
+  color: #afafaf;
+}
+
+div.messagesSmall div.details1{
+  overflow-x: hidden;
+}
+
+div.messageSmall > div.allDetails{
+  width: 90%;
+}
+
+div.messagesSmall > div.messageSmall span.preview{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+div.messagesSmall > div {
+  border-bottom: 1px solid rgb(167, 165, 165);
+}
+
+div.messageSmall > div {
+  overflow-x: hidden;
+}
+
+div.messagesSmall {
+  height: 80%;
+  overflow-y: auto;
+}
+
+
+  .smallSelectStatus:focus{
+  box-shadow: 0 0 0 0.25rem #b329e5b1 !important;
+
+}
+
+button.left-arrow, button.right-arrow{
+  padding: 5px;
+}
+
+@media (max-width:400px) {
+  .textPosition{
+    font-size: 0.9em !important;
+  }
+  .hide-tools{
+    display: none;
+  }
+    .smallSelectStatus{
+    font-size: 0.8em !important;
+  }
+
+}
+
+
+@media (min-width:401px) {
+  .more-tools{
+    display: none;
+  }
+
+}
+
+
+
+@media (max-width:768px) {
+  .contentHolder{
+    width: 100% !important;
+    margin-inline: 0 !important;
+  }
+
+  .textPosition{
+    font-size: 1em;
+  }
+
+  form.navForm{
+    justify-content:center !important;
+  }
+
+  .smallSelectStatus{
+    font-size: 1em;
+  }
+}
+
+div.details1{
+  padding-block: 0.5rem;
+  overflow-x: hidden;
+}
+
+
+.dropdown-menu-custom{
+  min-width: 0;
+}
+
+.messageSmall:hover{
+  box-shadow: 0px 2px 6px 0 rgb(138, 138, 138), 0px -1px 2px 0 rgb(138, 138, 138), -1px 0px 2px 0 rgb(138, 138, 138), 1px 0px 2px 0 rgb(138, 138, 138) ;
+}
+
+
+table.messagesTable tr:hover{
+  box-shadow: 0px 2px 6px 0 rgb(138, 138, 138), 0px -1px 2px 0 rgb(138, 138, 138), -1px 0px 2px 0 rgb(138, 138, 138), 1px 0px 2px 0 rgb(138, 138, 138) ;
+}
+
+td.sender, td.preview{
+  cursor: pointer;
+}
+
+.delete-confirmation{
+  position: absolute;
+  color: white;
+  padding: 0.8rem;
+  padding-block: 0.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.2em;
+  background-color: rgb(21, 21, 21);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(63, 63, 63);
+  text-align: center;
+  width: 20vw;
+  min-width: 204px;
+
+  @media (max-width:400px){
+    font-size: 0.9em;
+  }
+  /* width: 40% */
+}
+
+.delete-confirmation > span.icon{
+  font-size: 2.8em;
+}
+
+div.noBookings{
+  padding-top: 2rem;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+div.delete-ask {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  background-color: rgb(145, 118, 145);
+  color: white;
+  font-size: 1.1em;
+  max-width: 300px;
+  min-width: 231px;
+}
+
+div.delete-ask > .question {
+  padding-bottom: 0.6rem;
+}
+
+div.delete-ask button{
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+
+div.loader{
+  left: 0;
+  top: 0;
+  justify-content: center;
+}
+
+div.loader>img {
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

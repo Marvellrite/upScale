@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#heroSection{
+    background-image:  url('./imagess/hero.jpg');
+    height: 90vh;
+    background-position: center bottom;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.minus-icon{
+    display: none;
+}
+.show-text .minus-icon{
+    display: block;
+}
+
+.show-text .plus-icon{
+    display: none;
+}
+
+.faq-text{
+    display: none;
+}
+
+.show-text .faq-text{
+    display: block;
+}
+.list-items li a{
+    display: block;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    transform: translateX(-1rem);
+    transition-property: opacity, visibility, transform;
+}
+.list-items div li{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.list-items li a:hover{
+    /* opacity: 1; */
+    /* visibility: visible; */
+    transform: translateX(0);
+    transition-duration: .4s;
+    opacity: .5;
+    transition-timing-function: ease-in-out;
+    border-bottom: 1px solid grey;
+    border-width: 60%;
+}
+/* .list-none{
+    transform: translateY(0);
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+} */
+.stuff-items .fa-bars{
+    display: none;
+}
+.fa-times{
+    display: none;
+}
+.stuff-items .fa-times {
+    display: block;
+}
+.stuff-items .list-items {
+    display: block;
+}
+.list-items{
+    display: none;
+}
+.booking input{
+    border-bottom: 1px solid grey;
+}
+.booking select{
+    border: 1px solid grey;
+}
+#messages{
+    outline: none;
+    border: 1px solid grey;  
+}
