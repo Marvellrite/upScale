@@ -1,3 +1,4 @@
+
 :root{
     --background-color: #f0dbed;
 }
@@ -199,4 +200,94 @@ div.assurance {
     background-color: #4365a3;
     color: white;
     text-align: center;
+}
+
+.exceptionalServiceHolder{
+    background-color: #4365a3;
+    padding-block: 3rem;
+}
+
+.exceptionalService{
+    
+}
+
+
+.holderExcept{
+    background-color: #4365a3;
+    padding-block: 4rem;
+    color: white;
+}
+
+div.divider{
+    margin-inline: auto;
+    width: 50px;
+    height: 10px;
+    background-color: #e280d3;
+}
+
+h3.OCServices{
+    font-size: 2.7em;
+}
+
+.ourServices{
+    background-color: #e7a8de8f;
+    padding-top: 2rem;
+    padding-inline: 2rem;
+    padding-bottom: 4rem;
+}
+
+.ourServices .title{
+    text-align: center;
+    font-size: 1.8em;
+    color:#a54482;
+    font-weight: 500;
+}
+
+
+.service{
+    box-sizing: content-box;
+    width: 30%;
+    max-width: 227px;
+    background-color: white;
+    padding-block: 2rem;
+    padding-inline: 2.5rem;
+    border-radius: 5px;
+}
+.service img{
+    display: block;
+    margin-inline: auto;
+    margin-block: 1rem;
+}
+.service .descrip{
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 2;
+}
+
+button.dirbtns{
+    border-radius: 50%;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-inline: 0.6em;
+    padding-bottom: 0.5rem;
+    background-color: #a54482;
+    color: white;
+    border: none;
+}
+
+button.allcare{
+  font-size: 1.2em;
+  display: block;
+  margin: auto;
+  margin-top: 2.5rem;
+  color:white;
+  background-color: #a54482;
+  border: 3px #a54482 solid;
+}
+
+button.allcare:hover{
+  background-color: transparent;
+  color:#a54482;
+  border: 3px #a54482 solid;
+
 }
