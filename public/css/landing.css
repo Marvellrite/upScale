@@ -291,3 +291,100 @@ button.allcare:hover{
   border: 3px #a54482 solid;
 
 }
+
+div.cusTestimonial{
+  display: flex;
+  margin-top: 1.5rem;
+
+}
+
+div.cusTestimonial h2{
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #a54482;
+  margin-bottom: 1.8rem;
+}
+
+div.cusTestimonial p.largeTest{
+  font-size: 1.3em;
+}
+
+div.cusTestimonial p.smallTest{
+  font-size: 1.1em;
+}
+
+div.cusTestimonial p.client{
+  font-size:medium;
+}
+
+div.cusTestimonial div.text{
+  padding: 3rem;
+  padding-top: 2.5rem;
+}
+
+img.cusImg{
+  /* height: 100%; */
+  width: 50%;
+}
+
+div.cusTestimonial div.image > img{
+  object-fit: cover;
+  width: 100%;
+}
+
+div.textwidget{
+  margin-top: 1rem;
+  padding: 3rem;
+  box-sizing: border-box;
+  border: #4365a3 solid 3px;
+  color: #4365a3;
+  font-weight: 500;
+  background-color: #4365a31c;
+}
+
+footer div.logo{
+  gap: 1.7rem;
+}
+
+footer{
+    gap: 1.5rem;
+    background-color: #bbbabb50;
+}
+
+footer img.logo {
+  width: 7em;
+  display: block;
+  margin-inline: auto;
+}
+
+footer img.logo~img{
+  display: block;
+  margin-inline: auto;
+}
+
+footer div.text{
+  font-size: 0.9em;
+  line-height: 1.3;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer ul li:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+footer div.footender{
+    margin-top: 2rem;
+    padding-inline: 5rem;;
+}
+
+footer ul li:first-child{
+    color: #a54482;
+    font-size: 1.2em;
+    font-weight: 700;
+}
