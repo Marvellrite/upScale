@@ -277,11 +277,17 @@ button.dirbtns{
     border-radius: 50%;
     font-size: 1.3em;
     font-weight: bold;
-    padding-inline: 0.6em;
-    padding-bottom: 0.5rem;
+    /* padding-inline: 0.6em; */
+    /* padding-: 0.5rem; */
+    /* padding-block: 0.5rem; */
     background-color: #a54482;
     color: white;
     border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button.allcare{
