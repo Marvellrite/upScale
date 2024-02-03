@@ -180,7 +180,6 @@ label.selected{
     font-size: 1.2em;
     padding-inline:5rem !important;
 }
-
 div.videoHolder{
     --boxShadowColor: rgb(95, 94, 94);
     --blur1: 1px;
@@ -227,6 +226,16 @@ div.divider{
 
 h3.OCServices{
     font-size: 2.7em;
+}
+
+div.servicesHolder>div:not(:last-child){
+    margin-right: 1rem;
+}
+
+div.servicesHolder>div{
+    /* width: 30%; */
+    /* max-width: 307px; */
+
 }
 
 .ourServices{
@@ -330,7 +339,13 @@ img.cusImg{
 div.cusTestimonial div.image > img{
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
+
+.cusTestimonial.d-flex>* {
+    width: 50%;
+}
+
 
 div.textwidget{
   margin-top: 1rem;
@@ -387,4 +402,8 @@ footer ul li:first-child{
     color: #a54482;
     font-size: 1.2em;
     font-weight: 700;
+}
+
+footer .footender>div {
+    display: flex;
 }
