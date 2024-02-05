@@ -312,14 +312,14 @@ div.imageWidget{
     display: flex;
     margin-inline: 5rem;
     margin-top: 4rem;
-
+    flex-wrap: wrap;
 
 }
 
 div.imageWidget h2{
   font-size: 2.5rem;
   font-weight: 600;
-  color: #a54482;
+  color: #4365a3;
   margin-bottom: 1.8rem;
 }
 
@@ -432,4 +432,25 @@ footer ul li:first-child{
 
 footer .footender>div {
     display: flex;
+}
+
+.imageWidget.d-flex div.btn-contain{
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.imageWidget.d-flex div.btn-contain button{
+    border-color: #4365a3;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #4365a3;
+    border-radius: 0;
+    padding: 9px 16px;
+
+}
+
+.imageWidget.d-flex div.btn-contain button:hover{
+    background-color: #4365a3;
+    color: #f0dbed;
 }
