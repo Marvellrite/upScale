@@ -476,6 +476,7 @@ div.contactUsCon .overlay{
     height: 100%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.425);
+    background-attachment: fixed;
 }
 
 div.contactUsCon h2{
@@ -485,9 +486,134 @@ div.contactUsCon h2{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
-    color: white;
-    text-shadow:    1px 0px 0px white, 
+    color: #f0dbed;
+    /* text-shadow:    1px 0px 0px white, 
                     -1px 0px 0px white, 
                     0px 1px 0px white, 
-                    0px -1px 0px white;
+                    0px -1px 0px white; */
+}
+
+.cHolder{
+    margin-top: 4rem;
+    margin-inline: 5rem;
+    flex-wrap: wrap;
+}
+
+.cHolder>h1{
+    margin-bottom: 1.5rem;
+    transform: translateX(6px);
+    font-size: 2.6em;
+    color: rgb(104, 104, 104);
+    width: 100%
+}
+
+.cHolder > *{
+    flex-grow: 1;
+}
+
+.cHolder input, .cHolder textarea{
+    padding: 0.6rem;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 1.2rem;
+    /* border: none; */
+}
+
+.cHolder .fHolder{
+    width: 50%;
+}
+
+.cHolder .fHolder>form {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cHolder .fHolder>form>div{
+    width: 47%;
+    position: relative;
+    background-color: transparent;
+}
+
+.cHolder .fHolder>form>div>label{
+    position: absolute;
+    top: 0.8rem;
+    left: 9px;
+    font-size: 1.1em;
+    transition: all ease 0.4s;
+    /* display: none; */
+}
+
+.cHolder .fHolder>form>div>input:focus + label, .cHolder .fHolder>form>div>input:not(:placeholder-shown) + label{
+    top: 0.2rem;
+    font-size: 0.79em;
+    color: #4365a3;
+}
+
+.cHolder .fHolder>form>div>input{
+    padding-top: 1.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 10px;
+    font-size: 0.8em;
+    border: transparent;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    border-radius: 0;
+
+}
+
+.cHolder .fHolder>form>textarea{
+    border: 1px solid rgb(184, 184, 184);
+
+}
+
+.cHolder .fHolder>form>div>input:focus{
+    border-radius: 0;
+    border: 1px solid rgb(184, 184, 184);
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    outline: none;
+
+}
+
+.cHolder .fHolder>form>textarea:focus{
+    /* outline-color: rgb(160, 160, 160); */
+    /* border: none; */
+    border-width: 1px;
+    border-radius: 0;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    outline: none;
+    /* border: none; */
+    /* border-width: 1px; */
+}
+
+.cHolder .fHolder textarea{
+    width: 100%;
+}
+
+.cHolder .fHolder>form input{
+    width: 100%;
+}
+
+.cHolder .fHolder>form>input[type="submit"]{
+    border: 2px #4365a3 solid;
+    color: #4365a3;  
+    font-weight: 600;
+    
+}
+
+.cHolder .fHolder>form>input[type="submit"]:hover{
+    color: #f0dbed;
+    background-color: #4365a3;
+}
+
+.cHolder .sHolder{
+    padding-left: 2rem;
+}
+
+.cHolder .sHolder{
+    font-size: 1.2em;
+}
+
+.cHolder .sHolder>*{
+    margin-bottom: 0.7rem;
 }
