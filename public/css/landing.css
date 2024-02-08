@@ -617,3 +617,15 @@ div.contactUsCon h2{
 .cHolder .sHolder>*{
     margin-bottom: 0.7rem;
 }
+
+span.instruct{
+    font-weight: 600;
+}
+
+a.Cno{
+    text-decoration: none;
+}
+
+.bold600{
+    font-weight: 600;
+}
