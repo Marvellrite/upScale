@@ -509,6 +509,7 @@ div.contactUsCon h2{
 
 .cHolder > *{
     flex-grow: 1;
+    width: 45%;
 }
 
 .cHolder input, .cHolder textarea{
@@ -607,7 +608,7 @@ div.contactUsCon h2{
 }
 
 .cHolder .sHolder{
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
 }
 
 .cHolder .sHolder{
@@ -628,4 +629,36 @@ a.Cno{
 
 .bold600{
     font-weight: 600;
+}
+
+.fsem{
+    font-size: 1em;;
+}
+.fsem08{
+    font-size: 0.8em;
+}
+.fsem09{
+    font-size: 0.9em;;
+}
+
+.daysList .weekday{
+    width: 2.7rem;
+    display: inline-block;
+}
+
+.hours>*:not(h2){
+    font-size: 0.9em;
+}
+
+.presentDay{
+    font-weight: 600;
+}
+
+.daysList {
+    line-height: 1.8;
+}
+
+.turn180{
+    transform: rotate(180deg) translateY(-4px);
+    color: #4365a3;
 }

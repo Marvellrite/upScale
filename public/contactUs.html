@@ -5,16 +5,16 @@
     <meta email="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/landing.css">
-    <script defer src="js/landing.js"></script>
+    <script src="js/contact.js"></script>
     <title>Contact Us</title>
 </head>
 <body class="pt-5">
 
     <nav class="position-fixed w-100">
         <ul class="m-auto container d-flex justify-content-between flex-row navbar-nav p-0">
-            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item"><a href="index.html">Home</a></li>
             <li class="nav-item"><a href="">Services</a></li>
-            <li class="nav-item"><a href="">Contact us</a></li>
+            <li class="nav-item active"><a href="">Contact us</a></li>
             <li class="nav-item"><a href="">About us</a></li>
         </ul>
     </nav>
@@ -92,12 +92,33 @@
             </form>
         </div>
         <div class="sHolder">
-            <div><span class="instruct">Call us on - </span><a class="Cno">01462 4343 853</a>
+            <div><span class="instruct">Call us on -  </span><a class="Cno fst-italic" style="font-size: 0.8em;">01462 4343 853</a>
             </div>
-            <div><span class="instruct">Email us on -</span><a class="Cno">info@-----.co.uk</a>
+            <div class="mt-4"><span class="instruct">Email us on - </span><a class="Cno fst-italic" style="font-size: 0.8em;">info@-----.co.uk</a>
             </div>
-            <div class="bold600">Registered Address</div>
+            <div class="bold600 mt-4" style="margin-bottom: 0;">Registered Address:</div>
+            <span class="fsem09">London, England</span>
+
+            <div class="mt-4 hours">
+                <div class="today">
+                    <h2 style="font-size: 1.2em;">Hours</h2>
+                    <p class="today mt-0">
+                        Open today <button class="toggleDateDisplay btn d-inline-block border-0 border-bottom rounded-0 pt-0 px-0" style="border-color: #4365a3 !important; color:#4365a3; padding-bottom: 0.1rem;">09:00 – 17:00 <span class="d-inline-block dropdown-toggle " style="color:#4365a3"></span> <span class="d-inline-block"></span></button> 
+                    </p>
+                </div>
+
+                <div class="daysList mt-0 d-none">
+                    <div class="days"> <span class="weekday">Mon</span> <span class="timeday">09:00 - 17:00 <span class="d-inline-block dropdown-toggle turn180"></span></span></div>
+                    <div class="days"> <span class="weekday">Tue</span> <span class="timeday">09:00 - 17:00</span></div>
+                    <div class="days"> <span class="weekday">Wed</span> <span class="timeday">09:00 - 17:00</span></div>
+                    <div class="days"> <span class="weekday">Thu</span> <span class="timeday">09:00 - 17:00</span></div>
+                    <div class="days presentDay"><span class="weekday">Fri</span> <span class="timeday">09:00 - 17:00</span></div>
+                    <div class="days"> <span class="weekday">Sat</span> Closed</div>
+                    <div class="days"> <span class="weekday">Sun</span> Closed</div>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
 
     <footer class="d-flex flex-column text-widget mt-5 p-4">
