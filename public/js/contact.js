@@ -14,11 +14,13 @@ days[date.getDay()].classList.add("presentDay");
 
 for(let i=0; i<btnToggle.length; i++){
     btnToggle[i].addEventListener("click", ()=>{ 
-        console.log("first")
         todayHolder.classList.toggle("d-none");
         dayList.classList.toggle("d-none");
     })
 
 }
 
-today.innerHTML = date.getDay == 0 || date.getDay == 6? "Closed today": "Open today";
+today.innerHTML = date.getDay == 0 || date.getDay == 6? "Open today": "Closed today";
+
+console.log(date.getDay())
+console.log(today.innerHTML)
