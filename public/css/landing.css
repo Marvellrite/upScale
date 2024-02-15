@@ -730,3 +730,11 @@ div.aboutUsCon h2{
                     0px 1px 0px white, 
                     0px -1px 0px white; */
 }
+
+.logoNav{
+	width:10%;
+	}
+
+button.navbar-toggler>*{
+	font-size: 1.5em;
+	}

@@ -1,0 +1,34 @@
+body {
+	line-height: 1.5;
+	}
+
+div.about-talk{
+	gap: 2.5rem;
+	}
+
+div.about-talk >*{
+     flex-grow:1;
+     width: 50%
+}
+
+
+div.members-req{
+	width: fit-content;
+	margin-inline: auto;
+	}
+	
+	
+.mt-9{
+	margin-top: 4rem;
+	}
+	
+	div.serv-div > button{
+	font-size: 1.2em;
+	font-weight: 500;
+	border: 2px solid;
+	}
+	
+	div.serv-div > button:hover{
+		background-color: black;
+		color: white;
+		}
