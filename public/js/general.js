@@ -15,3 +15,25 @@ window.addEventListener("scroll", ()=>{
 
 })
 
+
+/** For the navbar */
+
+{
+    const navBarHider = document.querySelector(".hideNavbar");
+    const navConatiner = document.querySelector(".navContainer");
+    const bodyOverlay = document.querySelector(".bodyOverlay");
+    navBarHider.addEventListener("click", ()=>{
+        navConatiner.classList.toggle("moveLeft");
+        bodyOverlay.classList.toggle("bodyOverlayAction");
+        bodyOverlay.classList.toggle("d-none");
+
+    })
+
+    const showMenuIcon = document.querySelector(".showMenu");
+    showMenuIcon.addEventListener("click", ()=>{
+        navConatiner.classList.toggle("moveLeft");
+        bodyOverlay.classList.toggle("bodyOverlayAction");
+        bodyOverlay.classList.toggle("d-none");
+    })
+
+}

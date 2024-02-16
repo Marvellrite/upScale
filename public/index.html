@@ -13,7 +13,7 @@
 </head>
 <body class="pt-5">
 
-    <nav class="justify-content-between d-flex position-fixed w-100 align-items-center px-5 py-4">
+    <!-- <nav class="justify-content-between d-flex position-fixed w-100 align-items-center px-5 py-4">
        <button class="navbar-toggler">
       <i class="fa-solid fa-bars"></i>
     </button>
@@ -26,7 +26,33 @@
             <li class="nav-item"><a href="./contactUs.html">Contact us</a></li>
             <li class="nav-item"><a href="aboutUs.html">About us</a></li>
         </ul>
+    </nav> -->
+
+        <!-- For phone Size -->
+    <nav class="forPhones justify-content-between d-flex position-fixed w-100 align-items-center px-5 py-4">
+        <div>
+            <button class="showMenu navbar-toggler"><i class="fa-solid fa-bars"></i></button>
+    	    <div class="logoNav logoNavNoScroll ms-4"><img class="img-fluid" src="./img/upscaleLogo.png"></div>
+            <div style="font-size: 1.2em; font-weight: 500;">920340302</div>
+        </div>
     </nav>
+
+    <!-- Normal View -->
+    <div class="navContainer top-0 d-flex position-fixed z-2 align-items-start">
+            <div class=" vh-100 sideBar overflow-hidden  start-0 top-0 z-2" id="navbarCus1">
+
+                        <div class="sideBarLinks overflow-hidden py-4 row col row-cols-1 align-content-around text-muted ">
+                            <div class="col active"><a class="sideBarText" href="user_dashboard.html">Home</a></div>
+                            <div class="col "><a class="sideBarText" href="index.html">Services</a></div>
+                            <div class="col"><a class="sideBarText" href="services.html">Contact Us</a></div>
+                            <div class="col"><a class="sideBarText" href="contactUs.html">About</a></div>
+                        </div>
+            </div>
+
+            <button class=" btn-close mx-3 mt-3 fs-4 border hideNavbar"></button>
+    </div>
+
+
 
     <!-- <div class="container mx-auto  align-items-center row row-cols-2" style="margin-top:3rem">
         <div class="d-flex flex-column">

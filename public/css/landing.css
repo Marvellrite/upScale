@@ -90,6 +90,10 @@ div.logos1 .social-handles img:hover{
     transform: scale(113%);
 }
 
+.moveLeft {
+  transform: translateX(0%) !important;
+}
+
 nav {
     top: 0;
     background-color: var(--background-color);
@@ -129,6 +133,83 @@ nav li:hover{
 nav li:hover > a{
     color: #ffffff;
 }
+
+
+  .navContainer {
+    transform: translateX(-100%);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.7s ease;
+  }
+.navContainer .sideBarText {
+  padding-block: 0.5rem 0.8rem;
+  transition: all 0.3s ease;
+}
+.navContainer .sideBarText:hover:not(.active) {
+  transform: translateX(12px);
+}
+.navContainer .sideBarText span {
+  padding-right: 0.6rem;
+  font-size: 1.5rem;
+}
+.navContainer .sideBarLinks {
+  margin-inline: 0;
+}
+.navContainer .sideBarLinks > .col {
+  padding-left: 5.5rem;
+  margin-bottom: 1.2rem;
+}
+.navContainer .sideBarLinks > .col > a, .navContainer .sideBarLinks > .col > button {
+  color: rgba(10, 10, 59, 0.663);
+  text-decoration: none;
+  display: block;
+  background-color: transparent;
+  border: none;
+  padding-inline: 0;
+  font-size: 1.3em;
+}
+.navContainer .sideBarLinks > .col.active {
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 4px 6px rgb(73, 162, 235);
+}
+.navContainer .sideBar {
+    padding-top: 6rem;
+  box-shadow: 1px 0 8px 0 rgba(14, 14, 91, 0.341);
+  width: 30vw;
+    background-color: var(--background-color);
+}
+
+nav.forPhones > div {
+  /* position: fixed; */
+  width: 100%;
+  display: flex;
+  background-color: var(--background-color);
+  justify-content: space-between;
+  /* z-index: 2; */
+  align-items: center;
+  /* padding-inline: 15px; */
+}
+nav.forPhones > div > a, nav.forPhones > div > button {
+  font-size: 0.9em;
+  /* color: white; */
+  padding-block: 4px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+nav.forPhones > div > a:focus, nav.forPhones > div > button:focus {
+  color: rgb(208, 229, 250) !important;
+}
+nav.forPhones > div > a.nLetters, nav.forPhones > div > button.nLetters {
+  border-radius: 5px;
+  background-color: rgb(208, 229, 250);
+  padding: 0px 2px;
+  font-size: 1.3em;
+  color: black;
+}
+
+
 
 .slider-testimonies{
     padding-top: 6rem;
