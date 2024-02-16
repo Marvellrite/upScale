@@ -1,6 +1,8 @@
 
 :root{
-    --background-color: #f0dbed;
+    --background-color: #f0f7f4;
+    --foreground-color-light: #d6e5df;
+    --text-color-mid-1: #588f79;
 }
 
 body{
@@ -90,7 +92,7 @@ div.logos1 .social-handles img:hover{
 
 nav {
     top: 0;
-    background-color: #f0dbeda4;
+    background-color: var(--background-color);
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
     z-index: 2;
@@ -240,7 +242,7 @@ div.servicesHolder>div{
 }
 
 .ourServices{
-    background-color: #e7a8de8f;
+    background-color: var(--foreground-color-light);
     padding-top: 2rem;
     padding-inline: 2rem;
     padding-bottom: 4rem;
@@ -249,7 +251,7 @@ div.servicesHolder>div{
 .ourServices .title{
     text-align: center;
     font-size: 1.8em;
-    color:#a54482;
+    color: var(--text-color-mid-1);
     font-weight: 500;
 }
 
@@ -281,7 +283,7 @@ button.dirbtns{
     /* padding-inline: 0.6em; */
     /* padding-: 0.5rem; */
     /* padding-block: 0.5rem; */
-    background-color: #a54482;
+    background-color: var(--text-color-mid-1);
     color: white;
     border: none;
     width: 40px;
@@ -297,14 +299,14 @@ button.allcare{
   margin: auto;
   margin-top: 2.5rem;
   color:white;
-  background-color: #a54482;
-  border: 3px #a54482 solid;
+  background-color: var(--text-color-mid-1);
+  border: 3px var(--text-color-mid-1) solid;
 }
 
 button.allcare:hover{
   background-color: transparent;
-  color:#a54482;
-  border: 3px #a54482 solid;
+  color: var(--text-color-mid-1);
+  border: 3px var(--text-color-mid-1) solid;
 
 }
 
@@ -356,6 +358,11 @@ div.imageWidget div.image{
   background-position: top;
   width: 50%;
   /* height: 100%; */
+}
+
+div.imageWidget div.btn-contain{
+    text-align: center;
+    flex-grow: 1;
 }
 
 div.imageWidget.aboutUs div.image{
@@ -434,13 +441,13 @@ footer .footender>div {
     display: flex;
 }
 
-.imageWidget.d-flex div.btn-contain{
+div.btn-contain{
     width: 100%;
     text-align: center;
     margin-top: 2.5rem;
 }
 
-.imageWidget.d-flex div.btn-contain button{
+div.btn-contain button{
     border-color: #4365a3;
     border-width: 2px;
     border-radius: 5px;
@@ -452,11 +459,11 @@ footer .footender>div {
 
 }
 
-.imageWidget.d-flex div.btn-contain button:hover{
+button:hover{
     background-color: #4365a3;
     color: #f0dbed;
 }
-.imageWidget.d-flex div.btn-contain a{
+ div.btn-contain a{
     border-color: #4365a3;
     border-width: 2px;
     border-radius: 5px;
@@ -468,9 +475,9 @@ footer .footender>div {
 
 }
 
-.imageWidget.d-flex div.btn-contain a:hover{
+div.btn-contain a:hover{
     background-color: #4365a3;
-    color: #f0dbed;
+    color: var(--background-color);
 }
 
 div.contactUsCon{
@@ -732,9 +739,32 @@ div.aboutUsCon h2{
 }
 
 .logoNav{
-	width:10%;
+	width:8%;
+    transition: all ease 0.6s;
 	}
+
+.logoNavNoScroll{
+	width:18%;
+}
 
 button.navbar-toggler>*{
 	font-size: 1.5em;
 	}
+
+div.hero-talk{
+    margin-top: 4rem;
+    text-align: center;
+    color: #605e5e;
+}
+
+h1.hero-talk-header{
+    font-size: 3.1em;
+    font-weight: 700;
+}
+
+p.hero-talk-holder{
+    margin-top: 1.3rem;
+    font-style: italic;
+    font-size: 1.6em;
+
+}
