@@ -171,7 +171,8 @@ nav li:hover > a{
 .navContainer .sideBarLinks > .col.active {
   color: white;
   font-weight: bold;
-  box-shadow: 2px 4px 6px rgb(73, 162, 235);
+  /* box-shadow: 2px 4px 6px rgb(73, 162, 235); */
+  border: 5px ridge rgb(221 216 216);
 }
 .navContainer .sideBar {
     padding-top: 6rem;
@@ -207,6 +208,11 @@ nav.forPhones > div > a.nLetters, nav.forPhones > div > button.nLetters {
   padding: 0px 2px;
   font-size: 1.3em;
   color: black;
+}
+
+.hideNavbar{
+    font-size: 1.1em;
+    transform: translateY(41px);
 }
 
 
