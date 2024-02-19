@@ -319,13 +319,19 @@ h3.OCServices{
 }
 
 div.servicesHolder>div:not(:last-child){
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
 }
 
 div.servicesHolder>div{
     /* width: 30%; */
-    /* max-width: 307px; */
+    max-width: 293px;
+    flex-shrink: 0;
+    /* flex-basis: 30%; */
+}
 
+div.servicesHolder{
+    /* overflow-x: hidden; */
+    /* gap: 1.5%; */
 }
 
 .ourServices{
@@ -344,9 +350,9 @@ div.servicesHolder>div{
 
 
 .service{
-    box-sizing: content-box;
-    width: 30%;
-    max-width: 227px;
+    /* box-sizing: content-box; */
+    /* min-width: 32%; */
+    /* max-width: 30%; */
     background-color: white;
     padding-block: 2rem;
     padding-inline: 2.5rem;
@@ -854,4 +860,8 @@ p.hero-talk-holder{
     font-style: italic;
     font-size: 1.6em;
 
+}
+
+.w31{
+    width: 31% !important;
 }
