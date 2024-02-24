@@ -408,13 +408,14 @@ div.imageWidget{
     margin-inline: 5rem;
     margin-top: 4rem;
     flex-wrap: wrap;
+    gap: 3rem;
 
 }
 
 div.imageWidget h2{
   font-size: 2.5rem;
-  font-weight: 600;
-  color: #4365a3;
+  font-weight: 700;
+  color: rgb(73, 73, 73);
   margin-bottom: 1.8rem;
 }
 
@@ -431,7 +432,7 @@ div.imageWidget p.client{
 }
 
 div.imageWidget div.text{
-  padding: 3rem;
+  /* padding: 3rem; */
   padding-top: 2.5rem;
 }
 
@@ -449,12 +450,13 @@ div.imageWidget div.image > img{
 div.imageWidget div.image{
   background-size: cover;
   background-position: top;
-  width: 50%;
+  /* width: 50%; */
+    flex-grow: 1;
   /* height: 100%; */
 }
 
 div.imageWidget div.btn-contain{
-    text-align: center;
+    text-align: left;
     flex-grow: 1;
 }
 
@@ -469,9 +471,14 @@ div.imageWidget.testimonial div.image{
 }
 
 .imageWidget.d-flex>* {
-    width: 50%;
+    /* width: 50%; */
+    /* flex-grow: 1; */
 }
 
+div.imageWidget div.text{
+    width: 50%;
+    padding-bottom: 4rem;
+}
 
 div.textwidget{
   margin-top: 1rem;
@@ -537,7 +544,7 @@ footer .footender>div {
 div.btn-contain{
     width: 100%;
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
 }
 
 div.btn-contain button{
@@ -853,6 +860,7 @@ div.hero-talk{
 h1.hero-talk-header{
     font-size: 3.1em;
     font-weight: 700;
+    color: rgb(73, 73, 73);
 }
 
 p.hero-talk-holder{
@@ -864,4 +872,8 @@ p.hero-talk-holder{
 
 .w31{
     width: 31% !important;
+}
+
+.w-30{
+    width: 30% !important;
 }
