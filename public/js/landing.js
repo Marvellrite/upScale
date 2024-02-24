@@ -35,6 +35,7 @@
 // }, 5000);
 
 const servicesHolder = document.querySelector("div.servicesHolder");
+const servicesHolderPar = document.querySelector("div.serviceHolderPar");
 const service = document.querySelector("div.servicesHolder div.service");
 const allService = Array.from(document.querySelectorAll("div.servicesHolder div.service"));
 const computedStylesHolder = window.getComputedStyle(servicesHolder);
@@ -42,6 +43,7 @@ const computedStylesService = window.getComputedStyle(service);
 // To assign the needed gap for the care services
 {
     let widthHolder = computedStylesHolder.width.slice(0, -2);
+    console.log(widthHolder);
     let widthService = computedStylesService.width.slice(0, -2);
     
     // The calculations needed to give perfect spacing and adjustments
@@ -56,6 +58,17 @@ const computedStylesService = window.getComputedStyle(service);
         })
     }
     let remanantSpace = widthHolder - totalWidthServ;
-    let gap = Math.ceil(remanantSpace / 2);
+    let gap = Math.round(remanantSpace / 2);
+
     servicesHolder.style.gap  = `${gap}px`;
+    servicesHolderPar.style.minWidth = computedStylesHolder.width;
+}
+
+{
+    // Service Slider
+    servicesHolder.style.marginLeft = "0px";
+    // btnLeft.addEventListener("click", ()=>{
+    //     servicesHolder.style.marginLeft = `${parseInt(servicesHolder.style.marginLeft.slice(0, -2)) + 1259}px`;
+        
+    // })
 }
