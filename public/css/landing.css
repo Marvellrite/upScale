@@ -575,7 +575,7 @@ button:hover{
 
 }
 
-div.btn-contain a:hover{
+div.btn-contain a:hover, div.btn-contain button:hover{
     background-color: #4365a3;
     color: var(--background-color);
 }
