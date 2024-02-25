@@ -126,11 +126,15 @@ nav li{
     
 }
 
-nav li:hover{
+nav li:hover:not(.active){
     background-color: #e280d3;
 }
+nav li.active{
+    border: rgba(82, 79, 79, 0.911) ridge 2px;
+    border-radius: 4px;
+}
 
-nav li:hover > a{
+nav li:hover:not(.active) > a{
     color: #ffffff;
 }
 
@@ -528,7 +532,13 @@ footer ul li:not(:last-child){
 
 footer div.footender{
     margin-top: 2rem;
-    padding-inline: 5rem;;
+    padding-inline: 5rem;
+    width: 75%;
+    margin-inline: auto;
+}
+
+footer div.footender>img{
+    width: 1.1rem;
 }
 
 footer ul li:first-child{
@@ -609,7 +619,7 @@ div.contactUsCon h2{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
-    color: #f0dbed;
+    color: var(--background-color);
     /* text-shadow:    1px 0px 0px white, 
                     -1px 0px 0px white, 
                     0px 1px 0px white, 
@@ -805,7 +815,7 @@ div.map iframe{
 div.aboutUsCon{
     margin-top: 2rem;
     text-align: center;
-    background-image: url("../img/stethoscope-3.jpg");
+    background-image: url("../img/safe-injection.jpg");
     height: 11rem;
     background-position: -2px 53%;
     background-size: cover;
@@ -831,7 +841,7 @@ div.aboutUsCon h2{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
-    color: #f0dbed;
+    color: var(--background-color);
     /* text-shadow:    1px 0px 0px white, 
                     -1px 0px 0px white, 
                     0px 1px 0px white, 
