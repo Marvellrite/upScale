@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+
+.child{
+    display: flex;
+    flex-flow: column;
+    gap: 0.7rem;
+}
+
+.child>div{
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    max-width: 80px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+
+.color{
+    color: brown;
+    font-weight: bolder;
+}

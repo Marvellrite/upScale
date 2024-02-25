@@ -72,3 +72,7 @@ setInterval(() => {
         
 //     // })
 // }
+
+const observerMoveRight = new IntersectionObserver((entries)=>{
+    
+});

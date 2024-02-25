@@ -888,7 +888,7 @@ p.hero-talk-holder{
     width: 30% !important;
 }
 
-@keyframes moveImg1{
+/* @keyframes moveImg1{
     0%{
         opacity: 0.6;
         transform: translateX(-30px);
@@ -901,7 +901,7 @@ p.hero-talk-holder{
 
 @keyframes moveTextLeft1{
     0%{
-        opacity: 0.3;
+        opacity: 0;
         transform: translateX(80px);
     }
     100%{
@@ -912,18 +912,18 @@ p.hero-talk-holder{
 
 @keyframes moveTextRight1{
     0%{
-        opacity: 0.3;
+        opacity: 0;
         transform: translateX(-80px);
     }
     100%{
         opacity: 1;
         transform: translateX(0px);
     }
-}
+} */
 
 @keyframes moveTextLeft2 {
     0%{
-        opacity: 0.3;
+        opacity: 0;
         transform: translateX(80px);
     }
     100%{
@@ -932,10 +932,10 @@ p.hero-talk-holder{
     }
 }
 
-@keyframes moveTextRight1{
+@keyframes moveTextRight2{
     0%{
-        opacity: 0.3;
-        transform: translateX(-80px);
+        opacity: 0;
+        transform: translateX(-55px);
     }
     100%{
         opacity: 1;
