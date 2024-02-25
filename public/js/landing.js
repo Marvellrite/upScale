@@ -56,7 +56,7 @@ setInterval(() => {
 //             widthService = computedStylesService.width.slice(0, -2);
 //             totalWidthServ = widthService*3;
 //         })
-//     }
+    // }
 //     let remanantSpace = widthHolder - totalWidthServ;
 //     let gap = Math.round(remanantSpace / 2);
 

@@ -887,3 +887,73 @@ p.hero-talk-holder{
 .w-30{
     width: 30% !important;
 }
+
+@keyframes moveImg1{
+    0%{
+        opacity: 0.6;
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveTextLeft1{
+    0%{
+        opacity: 0.3;
+        transform: translateX(80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveTextRight1{
+    0%{
+        opacity: 0.3;
+        transform: translateX(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveTextLeft2 {
+    0%{
+        opacity: 0.3;
+        transform: translateX(80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveTextRight1{
+    0%{
+        opacity: 0.3;
+        transform: translateX(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.textToMoveLeft{
+    animation: moveTextLeft1 1s ; 
+}
+.textToMoveRight{
+    animation: moveTextRight1 1s ; 
+}
+
+
+.textToMoveLeft{
+    animation: moveTextLeft2 1s ; 
+}
+.textToMoveRight{
+    animation: moveTextRight2 1s ; 
+}
