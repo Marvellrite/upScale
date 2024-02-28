@@ -921,7 +921,7 @@ p.hero-talk-holder{
     }
 } */
 
-@keyframes moveTextLeft2 {
+/* @keyframes moveTextLeft2 {
     0%{
         opacity: 0;
         transform: translateX(80px);
@@ -941,19 +941,25 @@ p.hero-talk-holder{
         opacity: 1;
         transform: translateX(0px);
     }
-}
+} */
 
 .textToMoveLeft{
-    animation: moveTextLeft1 1s ; 
+    transform: translateX(50px);
+    opacity: 0;
+    transition: ease-in-out all 0.7s;
 }
-.textToMoveRight{
-    animation: moveTextRight1 1s ; 
+.textMovingLeft{
+    transform: translateX(0);
+    opacity: 1;
+
 }
 
 
-.textToMoveLeft{
-    animation: moveTextLeft2 1s ; 
-}
 .textToMoveRight{
-    animation: moveTextRight2 1s ; 
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: ease-in-out all 1s;}
+.textMovingRight{
+    transform: translateX(0);
+    opacity: 1;
 }
