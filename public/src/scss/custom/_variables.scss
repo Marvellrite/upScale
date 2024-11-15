@@ -1,0 +1,13 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+}
+
+// $enable-shadows: true;
+
+$sec: #a54482;
+$prime: #4365a3;
+
+$focus-ring-color: rgba(rgb(255, 157, 0), 0.25) !default;

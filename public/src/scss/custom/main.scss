@@ -1,0 +1,55 @@
+@import "./_variables";
+@import "../bootstrap/_functions.scss";
+@import "../bootstrap/_variables.scss";
+@import "../bootstrap/_variables-dark.scss";
+
+$theme-colors: map-merge(
+  $map1: $theme-colors,
+  $map2: (
+    "prime": $prime,
+    "sec": $sec,
+  ),
+);
+
+$form-check-input-checked-bg-color: $prime;
+
+@import "../bootstrap/_maps.scss";
+@import "../bootstrap/_mixins.scss";
+@import "../bootstrap/_root.scss";
+// Optional
+@import "../bootstrap/_reboot.scss";
+@import "../bootstrap/_type.scss";
+@import "../bootstrap/_images.scss";
+@import "../bootstrap/_buttons.scss";
+@import "../bootstrap/_tables.scss";
+@import "../bootstrap/_close.scss";
+@import "../bootstrap/forms/_form-check.scss";
+
+// $container-max-widths: (
+//   md: 750px,
+//   lg: 960px,
+//   xl: 1170px,
+// );
+
+@import "../bootstrap/_containers.scss";
+@import "../bootstrap/forms/_form-control.scss";
+@import "../bootstrap/forms/_form-select.scss";
+
+// Import Grid Sysytem
+@import "../bootstrap/_grid.scss";
+// Import API
+@import "../bootstrap/bootstrap-utilities.scss";
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+p.allround {
+  font-family: Raleway, sans-serif;
+  font-size: 0.7em;
+  line-height: 2.8;
+  font-weight: 400;
+  color: rgb(121, 121, 121);
+}
+
+@import "./home.scss";
