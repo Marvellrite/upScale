@@ -558,7 +558,7 @@ div.btn-contain button {
 }
 
 button:hover {
-  background-color: #4365a3;
+  /* background-color: #4365a3; */
   color: #f0dbed;
 }
 div.btn-contain a {
