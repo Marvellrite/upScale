@@ -8284,6 +8284,7 @@ textarea.form-control-lg {
 }
 body {
   font-family: Montserrat, sans-serif;
+  background-color: #f0f7f4;
 }
 
 p.allround {
@@ -8302,7 +8303,18 @@ div.hero-image-holder {
   background-image: url("../img/MicrosoftTeams-image (10).png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 430px;
+  height: 410px;
+}
+div.hero-image-holder div.intro_text {
+  width: 40%;
+  left: 5%;
+  bottom: 0;
+  background-color: #4365a3;
+  transform: translateY(40%);
+  color: white;
+  text-align: center;
+  border: ridge 4px white;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=main.css.map */
