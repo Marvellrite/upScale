@@ -405,7 +405,6 @@ div.imageWidget {
 }
 
 div.imageWidget h2 {
-  font-size: 2.5rem;
   font-weight: 700;
   color: rgb(73, 73, 73);
   margin-bottom: 1.8rem;
@@ -661,8 +660,10 @@ div.contactUsCon h2 {
   position: absolute;
   top: 0.8rem;
   left: 9px;
-  font-size: 1.1em;
+  font-size: 0.9em;
   transition: all ease 0.4s;
+  font-weight: 600;
+  color: #5754548c;
   /* display: none; */
 }
 
@@ -678,21 +679,30 @@ div.contactUsCon h2 {
   padding-bottom: 0.2rem;
   padding-left: 10px;
   font-size: 0.8em;
-  border: transparent;
-  border-bottom: 1px solid rgb(184, 184, 184);
-  border-radius: 0;
+  /* border: transparent;
+  border-bottom: 1px solid rgb(184, 184, 184);*/
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 0; 
+
 }
 
 .cHolder .fHolder > form > textarea {
+  border-radius: 0; 
   border: 1px solid rgb(184, 184, 184);
+}
+
+.cHolder .fHolder > form > textarea::placeholder{
+  font-weight: 600;
+  color: #5754548c;
 }
 
 .cHolder .fHolder > form > div > input:focus {
   border-radius: 0;
   border: 1px solid rgb(184, 184, 184);
-  border-color: rgb(0, 0, 0);
+  /* border-color: rgb(0, 0, 0); */
   border-width: 1px;
   outline: none;
+  background-color: transparent;
 }
 
 .cHolder .fHolder > form > textarea:focus {
@@ -700,9 +710,10 @@ div.contactUsCon h2 {
   /* border: none; */
   border-width: 1px;
   border-radius: 0;
-  border-color: rgb(0, 0, 0);
+  /* border-color: rgb(0, 0, 0); */
   border-width: 1px;
   outline: none;
+  background-color: transparent;
   /* border: none; */
   /* border-width: 1px; */
 }
@@ -848,7 +859,7 @@ button.navbar-toggler > * {
 }
 
 div.hero-talk {
-  margin-top: 9rem;
+  margin-top: 10rem;
   text-align: center;
   color: #605e5e;
 }

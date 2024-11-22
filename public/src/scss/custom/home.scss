@@ -1,3 +1,9 @@
+@import './variables';
+
+body{
+  font-size: 18px;
+}
+
 div.logo-holder {
   width: 190px;
 }
@@ -8,19 +14,71 @@ div.hero-image-holder {
   background-size: 100% 100%;
   height: 410px;
 
-  div.intro_text {
-    width: 40%;
-    left: 5%;
-    bottom: 0;
-    background-color: $prime;
-    transform: translateY(40%);
-    color: white;
-    text-align: center;
-    border: ridge 4px white;
-    line-height: 1.5;
+
+
+    &>div.cqc_intro_holder{
+      width: 40%;
+      left: 5%;
+      bottom: 0;
+      transform: translateY(20%);
+
+    &>div{
+      gap: 0.7rem;
+
+      &> div.intro_text {
+      width: 80%;
+      background-color: rgba($prime, 0.8);
+      // background-color: $prime;
+      color: white;
+      text-align: center;
+      border: ridge 4px white;
+      line-height: 1.5;
+    }
+
+    img{
+      width: 11rem;
+    }
+
+    }
+
   }
 }
 
 div.welcome_to_upscale {
   margin-top: 5rem;
+}
+
+.shadowed_effect{
+
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease;
+  
+  &:hover{
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.1);
+    // border: 1px #86b7fe;
+  }
+}
+
+div.carousel_custom {
+  padding-bottom: 3rem;
+
+  .services_anchor_holder{
+    max-width: 320px
+  }
+}
+
+ul.y_choose_us{
+  &>li{
+    // margin-bottom: 0.9rem;
+    line-height: 1.9;
+    position: relative;
+    padding-left: 1.5rem;
+    
+    &::before{
+      content: '\f058';
+      color: $prime;
+      position: absolute;
+      left: 0px;
+    }
+  }
 }
