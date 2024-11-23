@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta email="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/landing.css">
         <link rel="stylesheet" href="css/aboutUs.css">
     <link rel="shortcut icon" href="img/upscaleLogo.png" type="image/x-icon">
@@ -11,16 +12,41 @@
 </head>
 <body class="pt-5">
 
-    <nav class="position-fixed w-100">
-        <ul class="m-auto container d-flex justify-content-between flex-row navbar-nav p-0">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item active"><a href="services.html">Services</a></li>
+    <div class="container-fluid bg-prime">
+    <div class="container-md py-2 d-flex justify-content-between align-items-center">
+        <!-- <div class="d-flex flex-column">
+            <span>Regulated by</span>
+            <div class="CQC-image-container"><img class="img-fluid" src="./img/Care-Quality-Commission.png" alt=""></div>
+        </div> -->
+        <div class=" fw-bold text-white">CONTACT US</div>
+
+
+            <div class="px-3 py-1 bg-sec-">
+                <div class=" position-relative text-white fw-semibold">
+                    Call us on +44 (0) 20 3105 1597
+                </div>
+            </div>
+    </div> 
+    </div>
+
+
+    <nav class="position-sticky w-100">
+        <div class=" d-flex container-sm justify-content-between px-4">
+        <div class="logo-holder">
+            <img class="img-fluid" src="./img/upscaleLogo.png" alt="" srcset="">
+        </div>
+
+        <!-- <div><i class="fa-solid fa-bar"></i></div> -->
+        <ul class="m-auto me-0 d-flex flex-row gap-3 navbar-nav p-0 list-unstyled">
+            <li class="nav-item active"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="services.html">Services</a></li>
             <li class="nav-item"><a href="contactUs.html">Contact us</a></li>
             <li class="nav-item"><a href="aboutUs.html">About us</a></li>
         </ul>
+    </div>
     </nav>
 
-    <div class="container m-auto  align-items-center row row-cols-2 mt-3">
+    <!-- <div class="container m-auto  align-items-center row row-cols-2 mt-3">
         <div class="d-flex flex-column">
             <span>Regulated by</span>
             <div class="CQC-image-container"><img class="img-fluid" src="./img/Care-Quality-Commission.png" alt=""></div>
@@ -54,13 +80,13 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 
-    <div class="hero-image">
+    <!-- <div class="hero-image">
         <div class="hero-image-holder">
             <img src="" alt="" srcset="">
         </div>
-    </div>
+    </div> -->
     
     <!-- <div class="container">
         <img class="d-block m-auto object-fit-contain w-100" src="./img/hero-image.png" alt="" srcset="">
@@ -71,13 +97,115 @@
         <div class="overlay"></div>
         <h2>Our Services</h2>
     </div>
+
+    <h2></h2>
     
-    <p class="mt-5 px-4 text-center " style="font-size: 1.2em;">
-        We deliver top-notch healthcare and social support to individuals in need.
+    <p class="mt-5 px-4 text-center fw-semibold" style="font-size: 1.2em;" id="companionship">
+        We deliver top-notch healthcare and social support to individuals in need. <br> Our services include: 
    </p>
    
+
+   <div class="container mt-5" >
+    <div class="row gx-3">
+        <div class="col-6">
+            <img src="./img/rs=w_719,h_479.webp" class="img-fluid" alt="">
+        </div>
+        <div class="col-6" >
+            <h2 class="text-prime fw-bold text-uppercase">
+                Companionship
+            </h2>
+            <p class="fw-medium" style="line-height: 1.7;">We provide emotional support and social interaction for individuals who may feel isolated or lonely. Our carers engage in meaningful conversations, accompany clients on outings, and participate in hobbies or activities that they enjoy. Through this service, we aim to improve emotional well-being and combat social isolation.</p>
+        </div>
+        <div class="col-12 text-center mt-4"><a href="contactUs.html" class="btn btn-prime text-uppercase rounded-0 fw-bold">Get in Touch</a></div>
+    </div>
+   </div>
+
+
+   <div class="container mt-10">
+    <div class="row gx-3">
+            <div class="col-6" id="supported_living">
+            <h2 class="text-prime fw-bold text-uppercase">
+                Supported Living / Live-in Care
+            </h2>
+            <p class="fw-medium" style="line-height: 1.7;">Our live-in care service allows you or your loved one to maintain independence while receiving the necessary support in the comfort of your home. We provide 24/7 assistance, including help with daily tasks, personal care, and medication management, ensuring safety, comfort, and dignity.</p>
+        </div>
+        <div class="col-6">
+            <img src="./img/qt=q_18.webp" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-12 text-center mt-4"><a href="contactUs.html" class="btn btn-prime text-uppercase rounded-0 fw-bold">Get in Touch</a></div>
+    </div>
+   </div>
+
+
+   <div class="container mt-10">
+    <div class="row gx-3">
+        <div class="col-6" style="max-height: 366px;" id="disability">
+            <img src="./imagess/specialist-care.webp" style="object-position: 0 11%;" class="w-100 h-100 object-fit-cover" alt="">
+        </div>
+        <div class="col-6">
+            <h2 class="text-prime fw-bold text-uppercase">
+                Learning Disability Support
+            </h2>
+            <p class="fw-medium" style="line-height: 1.7;">We support individuals with learning disabilities to live as independently as possible. Our team provides assistance with daily tasks, enhances communication skills, and helps clients access community resources. Our goal is to empower individuals to lead meaningful and active lives within their communities.</p>
+        </div>
+        <div class="col-12 text-center mt-4"><a href="contactUs.html" class="btn btn-prime text-uppercase rounded-0 fw-bold">Book an Appointment</a></div>
+    </div>
+   </div>
+
+
+   <div class="container mt-10">
+    <div class="row gx-3">
+
+        <div class="col-6" id="personal_care">
+            <h2 class="text-prime fw-bold text-uppercase">
+                Home Help / Personal Care
+            </h2>
+            <p class="fw-medium" style="line-height: 1.7;">Our home help services are designed to make daily living more manageable. We assist with household chores such as cleaning, laundry, meal preparation, and running errands. Our personal care services include support with bathing, dressing, and other hygiene tasks, ensuring a clean, comfortable, and dignified lifestyle.</p>
+        </div>
+                <div class="col-6">
+            <img src="./imagess/our-live-in-carers_-copy.webp" class="h-100 w-100 object-fit-cover" alt="">
+        </div>
+        <div class="col-12 text-center mt-4"><a href="contactUs.html" class="btn btn-prime text-uppercase rounded-0 fw-bold">Get in Touch</a></div>
+    </div>
+   </div>
+
+
+   
+   <div class="container mt-10">
+    <div class="row gx-3">
+        <div class="col-6" id="dementia_care">
+            <img src="./imagess/shutterstock_1113194144.jpg.webp" class="h-100 w-100 object-fit-cover" alt="">
+        </div>
+        <div class="col-6">
+            <h2 class="text-prime fw-bold text-uppercase">
+                Dementia Care
+            </h2>
+            <p class="fw-medium" style="line-height: 1.7;">Our dementia care services focus on maintaining clients' abilities and creating a safe, familiar environment. We help reduce confusion and anxiety through personalised routines, ensuring that your loved one feels secure and supported.</p>
+        </div>
+        <div class="col-12 text-center mt-4"><a href="contactUs.html" class="btn btn-prime text-uppercase rounded-0 fw-bold">Book an Appointment</a></div>
+    </div>
+   </div>
+
+
+   <div class="container mt-10">
+    <div class="row gx-3">
+
+        <div class="col-6" id="palliative_care">
+            <h2 class="text-prime fw-bold text-uppercase">
+                Palliative Care
+            </h2>
+            <p class="fw-medium" style="line-height: 1.7;">We provide compassionate support for individuals with life-limiting conditions. Our palliative care focuses on improving quality of life by managing pain and symptoms, ensuring comfort, and providing emotional and spiritual support, working closely with healthcare professionals.</p>
+        </div>
+        <div class="col-6">
+            <img src="./img/rs=w_719,h_479.webp" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-12 text-center mt-4"><a href="contactUs.html" class="btn btn-prime text-uppercase rounded-0 fw-bold">Book an Appointment</a></div>
+    </div>
+   </div>
  
- <div class="d-flex gap-3 align-items-center lh-lg" style="font-size: 1em;;"> 
+ <!-- <div class="d-flex gap-3 align-items-center lh-lg" style="font-size: 1em;;"> 
     <div class="img-conAbt w-50">
         <img class=" mt-5 flex-grow-1 img-fluid" src="./img/services.webp">
 
@@ -92,14 +220,50 @@
      	<li>Respite Care</li>
      	<li>End of Life</li>
      	</ul>
-    </div>
-
-</div>
+    </div> -->
    
 
 
-<h2 class="mt-9 text-center">How we can assist</h2>
-<div class=" text-center mt-4 btn-contain"><a href="services.html" class="btn">Our Services</a></div>
+        <div class="cHolder d-flex flex-nowrap" style="margin-top: 7rem; gap: 4rem">
+        <div class="w-50 flex-shrink-1">
+            <h2 class="text-prime fw-bold text-uppercase">Book an Appointment</h2>
+            <p class="fw-semibold text-prime mt-4">All home care starts with a conversation so that we can get to know more about you and your unique circumstances.</p>
+            <p>Get in touch now with a member of our care team and let us help you with the planning and cost of care at home. You can request a callback or a home visit, or just ask a question.</p>
+            <p>We’ll arrange for one of our expert team to respond asap to discuss your home care needs.
+            </p>
+
+        </div>
+        <div class="fHolder w-50 flex-shrink-1">
+            <form action="" class="sMessage d-flex">
+                <div>
+                    <input placeholder="" id="first_name" type="text" class="name form-control">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div>
+                    <input placeholder="" id="last_name" type="text" class="email form-control">
+                    <label for="last_name">Last Name</label>
+                </div>
+                <div>
+                    <input placeholder="" id="preferred_name" type="text" class="email form-control">
+                    <label for="preferred_name">Preferred Name</label>
+                </div>
+                <div>
+                    <input placeholder="" id="email" type="text" class="email form-control">
+                    <label for="email">Email*</label>
+                </div>
+                <div>
+                    <input placeholder="" id="contact_number_1" type="text" class="email form-control">
+                    <label for="contact_number_1">Contact Number 1</label>
+                </div>
+                <div>
+                    <input placeholder="" id="contact_number_2" type="text" class="email form-control">
+                    <label for="contact_number_2">Contact Number 2</label>
+                </div>
+                <textarea class="form-control" placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                <button type="submit" class="text-uppercase fw-semibold btn btn-prime rounded-0 px-3 py-2">Book Appointment</button>
+            </form>
+        </div>
+    </div>
 
 
 
