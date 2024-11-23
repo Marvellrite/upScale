@@ -74,6 +74,8 @@
 // }
 
 
+
+
 const observerMove = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
         console.log(entry.target);
@@ -100,3 +102,29 @@ const observerMove = new IntersectionObserver((entries)=>{
 Array.from(document.querySelectorAll(".textToMoveLeft, .textToMoveRight")).forEach((element)=>{
     observerMove.observe(element);
 })
+
+
+const detailed_text = document.querySelectorAll('div.detailed_text');
+
+const view_Dtext = document.querySelectorAll('button.open_detailed');
+
+
+for (let detailed of detailed_text){
+    detailed.addEventListener('click', (e)=>{
+        if(e.target.classList.contains('btn-close')){
+            detailed.classList.add('d-none')
+        }
+    })
+}
+
+for (let button of view_Dtext){
+    button.addEventListener('click', (e)=>{
+        let btn_id = button.dataset.btn_id;
+        for (let detailed of detailed_text){
+            if(detailed.dataset.open_btn==btn_id){
+                detailed.classList.remove('d-none')
+            }
+
+        }
+    })
+}
