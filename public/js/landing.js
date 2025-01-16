@@ -15,7 +15,6 @@
 
 //     document.querySelector(`.label${(sliderNo==0?slideRadios.length:sliderNo)-1}`).classList.remove("selected");
 //     document.querySelector(`.testimony${(sliderNo==0?slideRadios.length:sliderNo)-1}`).classList.add("hide-left-testimony");
-    
 
 //     if(sliderNo-2==-1){
 //         lastTwo = 2;
@@ -45,7 +44,7 @@
 //     let widthHolder = computedStylesHolder.width.slice(0, -2);
 //     console.log(widthHolder);
 //     let widthService = computedStylesService.width.slice(0, -2);
-    
+
 //     // The calculations needed to give perfect spacing and adjustments
 //     let totalWidthServ = widthService*3;
 
@@ -56,7 +55,7 @@
 //             widthService = computedStylesService.width.slice(0, -2);
 //             totalWidthServ = widthService*3;
 //         })
-    // }
+// }
 //     let remanantSpace = widthHolder - totalWidthServ;
 //     let gap = Math.round(remanantSpace / 2);
 
@@ -69,62 +68,57 @@
 //     servicesHolder.style.marginLeft = "0px";
 //     // btnLeft.addEventListener("click", ()=>{
 //     //     servicesHolder.style.marginLeft = `${parseInt(servicesHolder.style.marginLeft.slice(0, -2)) + 1259}px`;
-        
+
 //     // })
 // }
 
-
-
-
-const observerMove = new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-        console.log(entry.target);
-        if (entry.isIntersecting) {
-            if (entry.target.classList.contains("textToMoveRight")) {
-                observerMove.unobserve(entry.target);       
-                return entry.target.classList.add("textMovingRight");
-            }
-
-            {
-                observerMove.unobserve(entry.target);       
-                return entry.target.classList.add("textMovingLeft");
-            }
+const observerMove = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      console.log(entry.target);
+      if (entry.isIntersecting) {
+        if (entry.target.classList.contains("textToMoveRight")) {
+          observerMove.unobserve(entry.target);
+          return entry.target.classList.add("textMovingRight");
         }
 
+        {
+          observerMove.unobserve(entry.target);
+          return entry.target.classList.add("textMovingLeft");
+        }
+      }
+    });
+  },
+  {
+    threshold: 0.6,
+  }
+);
 
-    }
-    )
-}, {
-    threshold: 0.6
+Array.from(
+  document.querySelectorAll(".textToMoveLeft, .textToMoveRight")
+).forEach((element) => {
+  observerMove.observe(element);
 });
 
+const detailed_text = document.querySelectorAll("div.detailed_text");
 
-Array.from(document.querySelectorAll(".textToMoveLeft, .textToMoveRight")).forEach((element)=>{
-    observerMove.observe(element);
-})
+const view_Dtext = document.querySelectorAll("button.open_detailed");
 
-
-const detailed_text = document.querySelectorAll('div.detailed_text');
-
-const view_Dtext = document.querySelectorAll('button.open_detailed');
-
-
-for (let detailed of detailed_text){
-    detailed.addEventListener('click', (e)=>{
-        if(e.target.classList.contains('btn-close')){
-            detailed.classList.add('d-none')
-        }
-    })
+for (let detailed of detailed_text) {
+  detailed.addEventListener("click", (e) => {
+    if (e.target.classList.contains("btn-close")) {
+      detailed.classList.add("d-none");
+    }
+  });
 }
 
-for (let button of view_Dtext){
-    button.addEventListener('click', (e)=>{
-        let btn_id = button.dataset.btn_id;
-        for (let detailed of detailed_text){
-            if(detailed.dataset.open_btn==btn_id){
-                detailed.classList.remove('d-none')
-            }
-
-        }
-    })
+for (let button of view_Dtext) {
+  button.addEventListener("click", (e) => {
+    let btn_id = button.dataset.btn_id;
+    for (let detailed of detailed_text) {
+      if (detailed.dataset.open_btn == btn_id) {
+        detailed.classList.remove("d-none");
+      }
+    }
+  });
 }

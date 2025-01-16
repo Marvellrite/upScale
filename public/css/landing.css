@@ -99,11 +99,11 @@ nav {
 
 nav a {
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-inline: auto;
   color: rgba(82, 79, 79, 0.911);
   transition: all 0.4s;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 nav ul {
@@ -682,16 +682,15 @@ div.contactUsCon h2 {
   /* border: transparent;
   border-bottom: 1px solid rgb(184, 184, 184);*/
   border: 1px solid rgb(184, 184, 184);
-  border-radius: 0; 
-
+  border-radius: 0;
 }
 
 .cHolder .fHolder > form > textarea {
-  border-radius: 0; 
+  border-radius: 0;
   border: 1px solid rgb(184, 184, 184);
 }
 
-.cHolder .fHolder > form > textarea::placeholder{
+.cHolder .fHolder > form > textarea::placeholder {
   font-weight: 600;
   color: #5754548c;
 }
@@ -850,8 +849,14 @@ div.aboutUsCon h2 {
   transition: all ease 0.6s;
 }
 
-.logoNavNoScroll {
-  width: 18%;
+img.logoImg {
+  transition: all 0.6s ease-in;
+  width: 100%;
+  height: auto;
+}
+
+img.logoNavScrolled {
+  width: 70%;
 }
 
 button.navbar-toggler > * {
@@ -872,8 +877,8 @@ h1.hero-talk-header {
 
 p.hero-talk-holder {
   margin-top: 1.3rem;
-  font-style: italic;
-  font-size: 1.6em;
+  /* font-style: italic; */
+  font-size: 1.1em;
 }
 
 .w31 {

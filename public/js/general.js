@@ -1,20 +1,27 @@
-const logoNav = document.querySelector("div.logoNav");
+const logoNav = document.querySelector("div.hero-image-holder");
+const logoImg = document.querySelector("img.logoImg");
+console.log(logoNav);
 
+window.addEventListener("scroll", (e) => {
+  const target = e.target;
+  const scrollLength = 60;
+  const scrolled = window.scrollY;
 
-// window.addEventListener("scroll", ()=>{
-//     const scrollLength = 40;
-//     const scrolled = window.scrollY;
-//     if(scrolled>=scrollLength && logoNav.classList.contains("logoNavNoScroll")){
-//         return logoNav.classList.remove("logoNavNoScroll")
-//     }
-//     else if(scrolled<scrollLength && !logoNav.classList.contains("logoNavNoScroll")){
-//         return logoNav.classList.add("logoNavNoScroll")
-//     }
-//         return;
-
-
-// })
-
+  if (
+    scrolled >= scrollLength &&
+    !logoImg.classList.contains("logoNavScrolled")
+  ) {
+    // logoImg.classList.remove("");
+    return logoImg.classList.add("logoNavScrolled");
+  } else if (
+    scrolled < scrollLength &&
+    logoImg.classList.contains("logoNavScrolled")
+  ) {
+    // logoImg.classList.add("");
+    return logoImg.classList.remove("logoNavScrolled");
+  }
+  return;
+});
 
 /** For the navbar */
 

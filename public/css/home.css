@@ -107,4 +107,8 @@ div.detailed_text > div > div {
   max-width: 650px;
 }
 
+div.bg_top_bottom_gradient {
+  background-image: linear-gradient(to bottom, transparent, tint-color(#4365a3, 85%));
+}
+
 /*# sourceMappingURL=home.css.map */

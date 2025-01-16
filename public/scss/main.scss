@@ -1,175 +1,159 @@
 @import "../node_modules/bootstrap/scss/functions";
 
-
 $foregroundColor: #b329e5;
 $backgroundColor: #481849;
 $backgroundColorTrans: #48184968;
 $navbarColor: rgb(39, 38, 39);
 $foregroundColor2: orange;
 
-body{
-    background: url("../img/bg3.jpg") no-repeat;
-    background-size: cover;
-    // min-height: 100vh;
-    display: flex;
+body {
+  background: url("../img/bg3.jpg") no-repeat;
+  background-size: cover;
+  // min-height: 100vh;
+  display: flex;
 }
-
-
 
 nav.navbar {
-    // background-color: tint-color($backgroundColorTrans, 30%);
-    background-color: $navbarColor;
-    &:nth-child(1){
-       &>a{
-        color: $foregroundColor2;
-       } 
+  // background-color: tint-color($backgroundColorTrans, 30%);
+  background-color: $navbarColor;
+  &:nth-child(1) {
+    & > a {
+      color: $foregroundColor2;
     }
-    color: white;
+  }
+  color: white;
 }
 
+form {
+  width: 70%;
 
-form{
-    width: 70%;
+  *::placeholder {
+    font-size: 1.1em;
+  }
 
-    *::placeholder{
-        font-size:1.1em;
-    }
-
-div.searchHolder{
+  div.searchHolder {
     width: 100%;
     background-color: white;
 
-    input{
-        border:none !important;
-        outline:none !important;
-        width: 100%;
-    
-    &:focus{
-        border:transparent !important;
-        outline:none !important;
-    }
-    
+    input {
+      border: none !important;
+      outline: none !important;
+      width: 100%;
 
+      &:focus {
+        border: transparent !important;
+        outline: none !important;
+      }
     }
 
-    &.focused{
-        background-color: white;
+    &.focused {
+      background-color: white;
+    }
+  }
+
+  select {
+    & > option {
+      font-size: 1.1em;
     }
 
+    &:focus {
+      box-shadow: 0 0 0 0.25rem tint-color($foregroundColor, 0%) !important;
+    }
+  }
 }
 
-select{
-    &>option{
-        font-size: 1.1em;
-    }
-
-    &:focus{
-    box-shadow: 0 0 0 0.25rem tint-color($foregroundColor, 0%) !important;
-    }
-}
+.boxEmphasis {
+  box-shadow: 0 0 0 0.25rem tint-color($foregroundColor, 0%) !important;
 }
 
-.boxEmphasis{
-    box-shadow: 0 0 0 0.25rem tint-color($foregroundColor, 0%) !important;
-}
+div.contentHolder {
+  // overflow-y: auto;
+  border: ridge 2px rgb(186, 184, 184);
+  border-bottom: none;
+  border-top: none;
+  width: 90vw;
+  margin-inline: auto;
+  background-color: rgba(255, 255, 255, 0.739);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 
-div.contentHolder{
-    // overflow-y: auto;
-    border: ridge 2px rgb(186, 184, 184);
-    border-bottom: none;
-    border-top: none;
-    width: 90vw;
-    margin-inline: auto;
-    background-color: rgba(255, 255, 255, 0.739);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+  table.messagesTable {
+    table-layout: fixed;
+    background-color: tint-color($foregroundColor, 90%);
 
-    table.messagesTable{
-        table-layout: fixed;
-        background-color: tint-color($foregroundColor, 90%);
+    tr.messages {
+      color: black;
+      font-size: 1em;
+      overflow: hidden;
+      text-overflow: ellipsis;
 
-        tr.messages{
-        color: black;
-        font-size: 1em;
-        overflow: hidden;
+      &:nth-of-type(odd) > td {
+        background-color: #f6f5f7;
+      }
+
+      td.marker {
+        width: 40px;
+      }
+      td.sender {
+        // padding-top: 5px;
+        white-space: nowrap;
         text-overflow: ellipsis;
+        width: 125px;
+      }
 
-        &:nth-of-type(odd)>td{
-            background-color: #f6f5f7;
-        }
-
-        td.marker{
-            width: 40px;
-
-        }
-        td.sender{
-            // padding-top: 5px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            width: 125px;
-
-    }
-
-        td.preview{
+      td.preview {
         width: 70%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        }
+      }
     }
 
-    td.time{
-        width: 70px;
-        font-size: 0.9em;
+    td.time {
+      width: 70px;
+      font-size: 0.9em;
     }
-    }
-
-    
+  }
 }
 
-
-
-div.tableContainer{
-    height: 82vh;
-    overflow-y: auto;
+div.tableContainer {
+  height: 82vh;
+  overflow-y: auto;
 }
 
-input.customCheckBox{
-        height: 1.1rem;
-        width: 1.1rem;
+input.customCheckBox {
+  height: 1.1rem;
+  width: 1.1rem;
 
-        &:checked{
-            background-color: tint-color($foregroundColor, 30%) !important;
-            border-color: tint-color($foregroundColor, 50%) !important;
-        }
-        &:focus{
-            box-shadow: 0 0 0 0.15rem tint-color($foregroundColor, 0%);
-        }
-    }
+  &:checked {
+    background-color: tint-color($foregroundColor, 30%) !important;
+    border-color: tint-color($foregroundColor, 50%) !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.15rem tint-color($foregroundColor, 0%);
+  }
+}
 
-            td.marker{
-            width: 40px;
+td.marker {
+  width: 40px;
+}
 
-        }
+div.tools {
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.909);
 
-div.tools{
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.909);
-
-    .first1{
-        padding-inline: 8px;
-    }
-    .second{
-        padding-inline: .7rem;
-    }
+  .first1 {
+    padding-inline: 8px;
+  }
+  .second {
+    padding-inline: 0.7rem;
+  }
 }
 
 span.selectAll {
-    width: 40px;
-
-
+  width: 40px;
 }
 
-.colorAsh{
-    color: #afafaf;
+.colorAsh {
+  color: #afafaf;
 }
