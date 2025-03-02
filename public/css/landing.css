@@ -104,6 +104,9 @@ nav a {
   color: rgba(82, 79, 79, 0.911);
   transition: all 0.4s;
   font-weight: 600;
+  padding-top: 0.2rem;
+  padding-inline: 0.8rem;
+  display: block;
 }
 
 nav ul {
@@ -113,8 +116,6 @@ nav ul {
 }
 
 nav li {
-  padding: 0.2rem;
-  padding-inline: 0.8rem;
   transition: all 0.6s;
   /* border-right: solid 1px ; */
 }
@@ -125,6 +126,10 @@ nav li:hover:not(.active) {
 nav li.active {
   border: rgba(82, 79, 79, 0.911) ridge 2px;
   border-radius: 4px;
+}
+
+nav li.active > a{
+  pointer-events: none;
 }
 
 nav li:hover:not(.active) > a {
@@ -578,7 +583,7 @@ div.btn-contain button:hover {
 }
 
 div.contactUsCon {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   text-align: center;
   background-image: url("../img/contactUs2.webp");
   height: 11rem;
@@ -614,7 +619,7 @@ div.contactUsCon h2 {
 }
 
 .cHolder {
-  margin-top: 4rem;
+  margin-top: 5rem;
   margin-inline: 5rem;
   flex-wrap: wrap;
 }
@@ -809,7 +814,7 @@ div.map iframe {
 }
 
 div.aboutUsCon {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   text-align: center;
   background-image: url("../img/safe-injection.jpg");
   height: 11rem;
@@ -961,5 +966,17 @@ p.hero-talk-holder {
 }
 .textMovingRight {
   transform: translateX(0);
+  opacity: 1;
+}
+
+
+div.VMA.hide{
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: ease-in-out all 1s;
+}
+
+div.VMA.hide.show{
+  transform: translateY(0);
   opacity: 1;
 }

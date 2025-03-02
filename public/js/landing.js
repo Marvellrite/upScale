@@ -90,7 +90,7 @@ const observerMove = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.6,
+    threshold: 0.4,
   }
 );
 
@@ -122,3 +122,20 @@ for (let button of view_Dtext) {
     }
   });
 }
+
+const observerVMA = new IntersectionObserver(
+    (entries) => {
+    entries.forEach((entry) => {
+      console.log(entry.target);
+      if (entry.isIntersecting) {
+          observerVMA.unobserve(entry.target);
+          return entry.target.classList.add("show");
+      }
+    });
+  },
+  {
+    threshold: 0.2,
+  }
+)
+
+observerVMA.observe(document.querySelector('.VMA.hide'));

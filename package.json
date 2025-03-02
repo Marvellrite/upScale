@@ -7,8 +7,7 @@
     "start": "node app.js",
     "dev": "nodemon app.js",
     "build": "tailwindcss -i ./public/src/input.css -o ./public/style.css --watch",
-    "vercel-build": "echo hello",
-    "sass": "sass --watch ./public/src/scss/custom:public/css"
+    "vercel-build": "echo hello"
   },
   "keywords": [],
   "author": "",
